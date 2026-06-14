@@ -1,25 +1,21 @@
-import { Hero } from '@/components/sections/Hero'
-import { About } from '@/components/sections/About'
-import { Skills } from '@/components/sections/Skills'
-import { Projects } from '@/components/sections/Projects'
-import { Learning } from '@/components/sections/Learning'
-import { Contact } from '@/components/sections/Contact'
-import { SectionTransition } from '@/components/common/SectionTransition'
+import { Chapter1 } from '@/components/chapters/Chapter1'
+import { Chapter2 } from '@/components/chapters/Chapter2'
+import { Chapter3 } from '@/components/chapters/Chapter3'
+import { Chapter4 } from '@/components/chapters/Chapter4'
+import { Chapter5 } from '@/components/chapters/Chapter5'
+import { Chapter6 } from '@/components/chapters/Chapter6'
+import { Chapter7 } from '@/components/chapters/Chapter7'
 
 export function Home() {
   return (
     <main>
-      <Hero />
-      <SectionTransition variant="gradient" />
-      <About />
-      <SectionTransition variant="wave" />
-      <Skills />
-      <SectionTransition variant="gradient" />
-      <Projects />
-      <SectionTransition variant="wave" />
-      <Learning />
-      <SectionTransition variant="gradient" />
-      <Contact />
+      <Chapter1 />
+      <Chapter2 />
+      <Chapter3 />
+      <Chapter4 />
+      <Chapter5 />
+      <Chapter6 />
+      <Chapter7 />
     </main>
   )
 }

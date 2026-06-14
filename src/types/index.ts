@@ -29,8 +29,15 @@ export interface Project {
   techStack: string[];
   githubUrl: string;
   liveUrl?: string;
-  featured: boolean;
   category: string;
+  order: number;
+}
+
+export interface JourneyEntry {
+  year: string;
+  title: string;
+  description: string;
+  icon: string;
 }
 
 export interface Achievement {
@@ -58,13 +65,11 @@ export interface LearningItem {
   title: string;
   description: string;
   icon: string;
-  progress: number;
-  resources: string[];
 }
 
-export interface NavLink {
+export interface ChapterLink {
   label: string;
-  href: string;
+  chapter: number;
 }
 
 export interface ContactForm {

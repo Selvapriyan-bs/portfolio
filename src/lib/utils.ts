@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]): string {
     .filter(Boolean)
     .map((input) => {
       if (typeof input === 'string') return input
-      if (typeof input === 'object') {
+      if (typeof input === 'object' && input !== null) {
         return Object.entries(input)
           .filter(([, value]) => Boolean(value))
           .map(([key]) => key)
@@ -14,4 +14,11 @@ export function cn(...inputs: ClassValue[]): string {
       return ''
     })
     .join(' ')
+}
+
+export function scrollToSection(id: string) {
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
 }

@@ -18,7 +18,7 @@ export function Footer() {
           </p>
 
           <button
-            onClick={() => scrollToSection('hero')}
+            onClick={() => scrollToSection('chapter-1')}
             className="flex items-center gap-2 text-sm text-muted hover:text-white transition-colors duration-300"
           >
             Back to top
